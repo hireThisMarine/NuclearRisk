@@ -8,11 +8,31 @@
 #define DIE_MAX 6
 #define MIN_ATTACK 2
 #define MIN_DEFEND 1
-#define MAX_ATTACK 12
-#define MAX_DEFEND 12
+#define ONE_MILLION 10000000
 
-enum roll_result { ATTACKER_WINS_TWO, ATTACKER_WINS_ONE,
-  DEFENDER_WINS_ONE_,  DEFENDER_WINS_TWO, BOTH_LOSE_ONE};
+enum roll_result { ATTACKER_WINS_TWO = 0, ATTACKER_WINS_ONE,
+  DEFENDER_WINS_ONE,  DEFENDER_WINS_TWO, BOTH_LOSE_ONE};
 
 roll_result attack(int attacker, int defender, bool fpFlag);
-                    
+
+
+/* class Board
+{
+  //42 Territories
+  //2 to 6 players
+  //5 dice (3 attack, 2 defend)
+  //turn order
+  //card Turn In
+  //Risk cards
+  //Nuclear Risk cards
+}*/
+
+/*
+class Player
+{
+  //player color
+  //player cards
+  //player Nuclear cards
+
+}
+                    */
